@@ -7,8 +7,7 @@ function App() {
 
   return (
       <main>
-        {/* <Card /> */}
-        <h1>Hell App</h1>
+        <Card />
       </main>
   )
 }
