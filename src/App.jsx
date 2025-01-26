@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import Card from './components/card'
+import React from "react";
+import HomePage from "./pages/HomePage";
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-      <main>
-        <Card />
-      </main>
-  )
+    <main>
+      <HomePage />
+    </main>
+  );
 }
 
-export default App
+export default App;

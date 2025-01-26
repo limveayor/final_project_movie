@@ -12,3 +12,11 @@ export default function MainLayout() {
     </>
   )
 }
+
+export function AdminLayout(){
+  return(
+    <>
+      <Outlet />
+    </>
+  )
+}

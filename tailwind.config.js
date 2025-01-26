@@ -1,21 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-export default{
-  content: ["./src/**/*.{html,js}"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],// Ensure paths match your project structure
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ['"Poppins"', 'sans-serif'],
+      colors: {
+        primary: "#051622",
+        secondary: "#1BA098",
+        accent: "#DEB992",
       },
-      backgroundColor: theme => ({
-        ...theme('colors'),
-        'primary': '#051622',
-        'secondary': '#1BA098',
-        'accent': '#DEB992',
-       })
+      fontFamily: {
+        'poppins': ["Poppins", "sans-serif"],
+       }
     },
   },
-  plugins: [
-
-  ],
-}
-
+  plugins: [],
+};
