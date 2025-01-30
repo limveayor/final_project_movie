@@ -21,13 +21,14 @@ const routing = createBrowserRouter([
         element: <App />,
       },
       {
+        path: "/movies/:id",
+        element: <DetailPage />,
+      },
+      {
         path: "/about",
         element: <AboutPage />,
       },
-      {
-        path: "/detail",
-        element: <DetailPage />,
-      },
+
     ],
   },
   {

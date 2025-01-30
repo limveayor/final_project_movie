@@ -1,8 +1,8 @@
 import { Typography, Button } from "@material-tailwind/react";
 import React from "react";
-import Card from "../components/Card";
+import MovieCard from "../components/MovieCard";
 
-export default function DetailPage() {
+export default function DetailPage(data) {
   return (
     <main className=" bg-primary">
       <section className=" h-[640px]">
@@ -96,21 +96,10 @@ export default function DetailPage() {
       {/* Popular Card */}
       <section className="bg-primary text-customGray-dark p-4">
         <h1 className=" font-poppins text-accent font-bold text-3xl px-10 mt-5">
-          Popular
+          Recommendations
         </h1>
         <div className=" grid gap-5 p-10 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 min-sm:grid-col-1">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </div>
-        <div className=" grid gap-5 p-10 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 min-sm:grid-col-1">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <MovieCard  data={data}/>
         </div>
       </section>
     </main>

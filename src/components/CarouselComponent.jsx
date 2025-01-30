@@ -1,6 +1,6 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
 
-export function CarouselComponent() {
+export function CarouselComponent({data}) {
   return (
     <Carousel
       className=" h-[640px]"
@@ -78,7 +78,7 @@ export function CarouselComponent() {
           </div>
         </div>
       </div>
-      <div className="relative h-full w-full">
+      {/* <div className="relative h-full w-full">
         <img
           src="https://vcover-hz-pic.wetvinfo.com/vcover_hz_pic/0/nxxyh0x1vp4nydt1724320695662/0"
           alt="image 1"
@@ -197,7 +197,7 @@ export function CarouselComponent() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Carousel>
   );
 }
