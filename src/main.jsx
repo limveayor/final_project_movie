@@ -9,6 +9,8 @@ import MainLayout, { AdminLayout } from "./components/Layout.jsx";
 import { ThemeProvider } from "@material-tailwind/react";
 import Dashboard from "./components/Dashboard.jsx";
 import AdminListMovie from "./components/AdminListMovie.jsx";
+import { Provider } from "react-redux";
+import { store } from "./app/store.js";
 
 // Configure routing
 const routing = createBrowserRouter([
@@ -49,8 +51,10 @@ const routing = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <Provider store={store}>
     <ThemeProvider>
       <RouterProvider router={routing} />
     </ThemeProvider>
+    </Provider>
   </StrictMode>
 );

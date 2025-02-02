@@ -1,5 +1,7 @@
 import React from "react";
 import SidebarLeft from "./SidebarLeft";
+import AdminCarousel from "./AdminCarousel";
+import { AdminCard } from "./AdminCard";
 
 export default function Dashboard() {
   return (
@@ -103,11 +105,13 @@ export default function Dashboard() {
           </section>
 
           {/* Body Dashboard */}
-          <div class="p-4 bg-gray-500 h-[900px] rounded-tl-3xl mt-8">
-            <h1 class="text-2xl font-bold text-white">
-              Welcome to Daystar Daycare{" "}
-            </h1>
-            <p class="mt-2 text-white">Raising tomorrow's leaders.</p>
+          <div class="p-4 bg-gray-500 h-[900px] rounded-tl-3xl mt-8">           
+            <div className="">
+              <AdminCarousel />
+            </div>
+            <div>
+              <AdminCard />
+            </div>
           </div>
         </div>
       </div>
