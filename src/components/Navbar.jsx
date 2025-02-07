@@ -53,16 +53,16 @@ export default function Navbar() {
                 {/* <!-- Dropdown menu --> */}
                 <div
                   id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  class="z-10 hidden font-normal bg-primary divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
                 >
                   <ul
-                    class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                    class="py-2 text-sm text-white dark:text-gray-200"
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
                       <a
                         href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white "
+                        class="block px-4 py-2 hover:bg-secondary dark:hover:bg-gray-600 dark:hover:text-white "
                       >
                         Popular
                       </a>
@@ -70,7 +70,7 @@ export default function Navbar() {
                     <li aria-labelledby="dropdownNavbarLink">
                       <a
                         href="#"
-                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-secondary dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Now Playing
                       </a>
@@ -78,7 +78,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="block px-4 py-2 hover:bg-secondary dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Upcoming
                       </a>
@@ -86,7 +86,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="block px-4 py-2 hover:bg-secondary dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Top Rated
                       </a>
@@ -106,16 +106,16 @@ export default function Navbar() {
                 {/* <!-- Dropdown menu --> */}
                 <div
                   id="dropdownNavbar1"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  class="z-10 hidden font-normal bg-primary divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
                 >
                   <ul
-                    class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                    class="py-2 text-sm text-white dark:text-gray-200"
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
                       <a
                         href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white "
+                        class="block px-4 py-2 hover:bg-secondary dark:hover:bg-gray-600 dark:hover:text-white "
                       >
                         Popular
                       </a>
@@ -123,7 +123,7 @@ export default function Navbar() {
                     <li aria-labelledby="dropdownNavbarLink">
                       <a
                         href="#"
-                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-secondary   dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Aring Today
                       </a>
@@ -131,7 +131,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="block px-4 py-2 hover:bg-secondary dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         One TV
                       </a>
@@ -139,7 +139,7 @@ export default function Navbar() {
                     <li>
                       <a
                         href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="block px-4 py-2 hover:bg-secondary dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Top Rated
                       </a>
@@ -198,12 +198,12 @@ export default function Navbar() {
                   placeholder="Search"
                   required
                 />
-                <button
+                {/* <button
                   type="submit"
                   class="text-white absolute end-2.5 bottom-2.5 bg-secondary hover:bg-accent focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Search
-                </button>
+                </button> */}
               </div>
             </form>
           </section>

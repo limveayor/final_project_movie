@@ -9,8 +9,7 @@ export default function MovieCard({ data }) {
     : "https://via.placeholder.com/500x750?text=No+Image"; // Default image
 
   return (
-    <section className="w-[305px] h-[426px]">
-      <div className="p-10 w-96">
+    <section className="w-[305px] h-[405px] hover:scale-[1.02] focus:scale-[1.02]">
         <div className="bg-primary border border-primary rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-cover">
           <Link to={`/movies/${data.id}`}>
             <img
@@ -34,7 +33,6 @@ export default function MovieCard({ data }) {
             <StarRating voteAverage={data.vote_average} />
           </div>
         </div>
-      </div>
     </section>
   );
 }

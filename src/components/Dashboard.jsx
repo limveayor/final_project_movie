@@ -2,6 +2,7 @@ import React from "react";
 import SidebarLeft from "./SidebarLeft";
 import AdminCarousel from "./AdminCarousel";
 import { AdminCard } from "./AdminCard";
+import AdminCardTopRate from "./AdminCardTopRate";
 
 export default function Dashboard() {
   return (
@@ -82,37 +83,48 @@ export default function Dashboard() {
                     placeholder="Search"
                     required
                   />
-                  <button
+                  {/* <button
                     type="submit"
                     class="text-white absolute end-2.5 bottom-2.5 bg-secondary hover:bg-accent focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
                     Search
-                  </button>
+                  </button> */}
                 </div>
               </form>
             </section>
             {/* Profile */}
             <section className=" flex items-end gap-5 pe-14">
-            <p className="text-white "> Veayor</p>
-            <div>
-              <img
-                src="https://imgs.search.brave.com/4rX2hgwg-hJz3lKuo5dPya1VB1GAz1-r77zY3F-As0I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzc0LzE1Lzk1/LzM2MF9GXzc0MTU5/NTU2XzY3bjU4MjNW/N0VpODdhNGc2Skpu/WUhDMHlNU28xQUV5/LmpwZw"
-                alt=""
-                className=" rounded-full w-14 h-12"
-              />
-            </div>
+              <p className="text-white "> Veayor</p>
+              <div>
+                <img
+                  src="https://imgs.search.brave.com/4rX2hgwg-hJz3lKuo5dPya1VB1GAz1-r77zY3F-As0I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzc0LzE1Lzk1/LzM2MF9GXzc0MTU5/NTU2XzY3bjU4MjNW/N0VpODdhNGc2Skpu/WUhDMHlNU28xQUV5/LmpwZw"
+                  alt=""
+                  className=" rounded-full w-14 h-12"
+                />
+              </div>
             </section>
           </section>
 
           {/* Body Dashboard */}
-          <div class="p-4 bg-gray-500 h-[900px] rounded-tl-3xl mt-8">           
-            <div className="">
-              <AdminCarousel />
-            </div>
-            <div>
-              <AdminCard />
-            </div>
-          </div>
+          <section class="p-4 bg-gray-500 h-[900px] w-full rounded-tl-3xl mt-8 flex">
+              <div className=" grid grid-cols-1 mt-2">
+                <AdminCarousel />
+                <p className=" font-bold text-white text-xl mt-2"> Popular Movie</p>
+                <div className=" flex mt-4 gap-12">
+                <AdminCard />
+                <AdminCard />
+                <AdminCard />
+                </div>
+              </div>
+              <div className=" mt-2 grid grid-col-1 pl-14">
+              <p className=" font-bold text-white text-xl mt-2"> Continue</p>
+                <AdminCardTopRate />
+                <p className=" font-bold text-white text-xl mt-2"> Top Rate</p>
+                <AdminCardTopRate />
+                <p className=" font-bold text-white text-xl mt-2"> General</p>
+                <AdminCardTopRate />
+              </div>
+          </section>
         </div>
       </div>
     </main>

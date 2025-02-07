@@ -1,16 +1,18 @@
+import React from 'react'
 import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
+    Card,
+    CardHeader,
+    CardBody,
+    Typography,
+    Button,
+  } from "@material-tailwind/react";
 
-export function AdminCard() {
+export default function AdminCardTopRate() {
   return (
-    <Card
+    <main>
+       <Card
       shadow={false}
-      className="relative grid h-[400px] w-[300px] max-w-[28rem] items-end justify-center overflow-hidden text-center"
+      className="relative grid h-[200px] w-[300px] max-w-[28rem] items-end justify-center overflow-hidden text-center"
     >
       <CardHeader
         floated={false}
@@ -42,5 +44,6 @@ export function AdminCard() {
         </div>
       </CardBody>
     </Card>
-  );
+    </main>
+  )
 }

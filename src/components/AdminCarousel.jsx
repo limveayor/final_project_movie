@@ -5,9 +5,9 @@ export default function AdminCarousel() {
     
   return (
     <main>
-      <Carousel className="rounded-xl h-96 w-[700px]">
+      <Carousel className="rounded-xl h-[350px] w-[1000px]">
         <img
-          src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
+          src="https://image-7wk.pages.dev/b939819e-7f74-45d6-ba4e-cd5a5848a082.jpg"
           alt="image 1"
           className="h-full w-full object-cover"
         />

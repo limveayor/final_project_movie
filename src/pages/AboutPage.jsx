@@ -10,11 +10,6 @@ export default function About() {
     const dispatch = useDispatch()
   return (
     <main className=" bg-primary p-5">
-
-     <div className=" text-white">
-     <h1 className="text-center text-4xl text-white">About Us Page {count}</h1>
-     <button onClick={() => dispatch(increment())}>Increment</button>
-     </div>
       {/* About US */}
       <section className=" grid grid-cols-2">
         <div className="">
