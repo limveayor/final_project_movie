@@ -47,7 +47,11 @@ const routing = createBrowserRouter([
       },
     ],
   },
-]);
+],
+  {
+    basename: "/final_project_movie", // 👈 this line fixes routing on GitHub Pages
+  }
+);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
